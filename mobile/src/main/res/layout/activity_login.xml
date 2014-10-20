@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="br.com.manoel.amaro.safepasswords.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/pinField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:editable="true"
+            android:ems="10"
+            android:enabled="true"
+            android:hint="@string/pin_field_hint"
+            android:inputType="numberPassword"
+            android:textSize="35sp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/verifyButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_button_text" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_button_text" />
+    </LinearLayout>
+
+</FrameLayout>
