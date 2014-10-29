@@ -23,5 +23,7 @@
     <string name="password_save">Save Password</string>
     <string name="cancel_action">Cancel</string>
     <string name="save_action">Save</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="password_title_transition_name">passwordTitleTransaction</string>
 
 </resources>

@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.manoel.amaro.safepasswords.activity.DetailActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:id="@+id/password_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:transitionName="@string/password_title_transition_name"
+            android:layout_width="wrap_content"
+            android:text="TESTE TITULO"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="20dp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+</LinearLayout>

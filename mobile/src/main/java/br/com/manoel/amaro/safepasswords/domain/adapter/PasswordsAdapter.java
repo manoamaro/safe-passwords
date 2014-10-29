@@ -19,9 +19,11 @@ public class PasswordsAdapter extends RecyclerView.Adapter<PasswordsAdapter.View
 
     Password.Dao passwordDao = new Password.Dao();
     List<Password> passwords = new ArrayList<>();
+    private View.OnClickListener onClickListener;
 
-    public PasswordsAdapter() {
+    public PasswordsAdapter(View.OnClickListener onClickListener) {
         super();
+        this.onClickListener = onClickListener;
         this.refresh();
     }
 
@@ -29,7 +31,7 @@ public class PasswordsAdapter extends RecyclerView.Adapter<PasswordsAdapter.View
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View view = LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.password_card, viewGroup, false);
-
+        view.setOnClickListener(this.onClickListener);
         return new ViewHolder(view);
     }
 
@@ -60,6 +62,10 @@ public class PasswordsAdapter extends RecyclerView.Adapter<PasswordsAdapter.View
         public void setPassword(Password password) {
             this.password = password;
             this.mTextView.setText(this.password.getTitle());
+        }
+
+        public Password getPassword() {
+            return password;
         }
     }
 

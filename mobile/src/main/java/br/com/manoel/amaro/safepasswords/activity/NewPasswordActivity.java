@@ -1,11 +1,10 @@
 package br.com.manoel.amaro.safepasswords.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import br.com.manoel.amaro.safepasswords.R;
 
-public class NewPasswordActivity extends Activity {
+public class NewPasswordActivity extends AbstractActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

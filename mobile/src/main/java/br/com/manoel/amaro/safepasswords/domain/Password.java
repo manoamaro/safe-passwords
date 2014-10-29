@@ -1,7 +1,5 @@
 package br.com.manoel.amaro.safepasswords.domain;
 
-import android.database.Cursor;
-
 import br.com.manoel.amaro.safepasswords.annotation.Column;
 import br.com.manoel.amaro.safepasswords.annotation.Entity;
 

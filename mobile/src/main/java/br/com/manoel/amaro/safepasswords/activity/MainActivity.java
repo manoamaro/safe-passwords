@@ -1,10 +1,10 @@
 package br.com.manoel.amaro.safepasswords.activity;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -12,7 +12,7 @@ import br.com.manoel.amaro.safepasswords.R;
 import br.com.manoel.amaro.safepasswords.activity.fragment.PasswordListFragment;
 import br.com.manoel.amaro.safepasswords.domain.Password;
 
-public class MainActivity extends Activity
+public class MainActivity extends AbstractActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     private NavigationDrawerFragment mNavigationDrawerFragment;
@@ -22,7 +22,10 @@ public class MainActivity extends Activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+
+        setSupportActionBar((Toolbar) findViewById(R.id.my_awesome_toolbar));
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -42,7 +45,7 @@ public class MainActivity extends Activity
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, new PasswordListFragment())
-                .commit();
+                        .commit();
                 break;
             case 1:
                 Password password = new Password();
@@ -56,7 +59,7 @@ public class MainActivity extends Activity
     }
 
     public void restoreActionBar() {
-        ActionBar actionBar = getActionBar();
+        ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setTitle(originalTitle);
     }
