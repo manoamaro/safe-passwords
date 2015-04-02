@@ -1,4 +1,4 @@
-package br.com.manoel.amaro.safepasswords.domain.adapter;
+package br.com.manoel.amaro.safepasswords.mobile.domain.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,8 +9,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.manoel.amaro.safepasswords.R;
-import br.com.manoel.amaro.safepasswords.domain.Password;
+import br.com.manoel.amaro.safepasswords.mobile.R;
+import br.com.manoel.amaro.safepasswords.mobile.domain.Password;
 
 /**
  * Created by manoel on 18/10/14.

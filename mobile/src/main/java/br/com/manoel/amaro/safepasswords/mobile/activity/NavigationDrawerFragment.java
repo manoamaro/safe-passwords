@@ -1,4 +1,4 @@
-package br.com.manoel.amaro.safepasswords.activity;
+package br.com.manoel.amaro.safepasswords.mobile.activity;
 
 
 import android.app.Activity;
@@ -21,7 +21,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import br.com.manoel.amaro.safepasswords.R;
+import br.com.manoel.amaro.safepasswords.mobile.R;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.

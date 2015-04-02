@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.manoel.amaro.safepasswords.activity.DetailActivity"
+    tools:context="br.com.manoel.amaro.safepasswords.mobile.activity.DetailActivity"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
@@ -11,18 +11,28 @@
         android:layout_width="match_parent"
         android:minHeight="?attr/actionBarSize"
         android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
 
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="20dp"
+        android:elevation="4dp"
+        android:transitionName="@string/toolbar_transition_name">
         <TextView
             android:id="@+id/password_title"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:transitionName="@string/password_title_transition_name"
             android:layout_width="wrap_content"
-            android:text="TESTE TITULO"
+            android:text="@string/title_placeholder"
             android:layout_height="wrap_content"
-            android:layout_marginTop="130dp"
-            android:layout_marginBottom="20dp"/>
+            android:layout_margin="10dp"/>
 
-        </android.support.v7.widget.Toolbar>
+    </android.support.v7.widget.CardView>
+
+
 
 
 

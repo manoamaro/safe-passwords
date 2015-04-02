@@ -1,4 +1,4 @@
-package br.com.manoel.amaro.safepasswords.domain;
+package br.com.manoel.amaro.safepasswords.mobile.domain;
 
 import java.io.Serializable;
 

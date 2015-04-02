@@ -1,4 +1,4 @@
-package br.com.manoel.amaro.safepasswords;
+package br.com.manoel.amaro.safepasswords.mobile;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

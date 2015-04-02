@@ -1,4 +1,4 @@
-package br.com.manoel.amaro.safepasswords.domain;
+package br.com.manoel.amaro.safepasswords.mobile.domain;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -9,8 +9,8 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.manoel.amaro.safepasswords.annotation.Column;
-import br.com.manoel.amaro.safepasswords.annotation.Entity;
+import br.com.manoel.amaro.safepasswords.mobile.annotation.Column;
+import br.com.manoel.amaro.safepasswords.mobile.annotation.Entity;
 
 /**
  * Created by manoel on 26/09/14.

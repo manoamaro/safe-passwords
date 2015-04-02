@@ -6,4 +6,4 @@
     android:divider="@android:color/transparent"
     android:dividerHeight="0dp"
     android:background="#cccc"
-    tools:context="br.com.manoel.amaro.safepasswords.activity.NavigationDrawerFragment" />
+    tools:context="br.com.manoel.amaro.safepasswords.mobile.activity.NavigationDrawerFragment" />

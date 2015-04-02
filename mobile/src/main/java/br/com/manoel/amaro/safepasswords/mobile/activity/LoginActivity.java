@@ -1,4 +1,4 @@
-package br.com.manoel.amaro.safepasswords.activity;
+package br.com.manoel.amaro.safepasswords.mobile.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,10 +17,10 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.flywaydb.core.Flyway;
 import org.flywaydb.core.api.android.ContextHolder;
 
-import br.com.manoel.amaro.safepasswords.domain.AbstractDao;
-import br.com.manoel.amaro.safepasswords.ContextApplication;
-import br.com.manoel.amaro.safepasswords.DatabaseHelper;
-import br.com.manoel.amaro.safepasswords.R;
+import br.com.manoel.amaro.safepasswords.mobile.R;
+import br.com.manoel.amaro.safepasswords.mobile.ContextApplication;
+import br.com.manoel.amaro.safepasswords.mobile.DatabaseHelper;
+import br.com.manoel.amaro.safepasswords.mobile.domain.AbstractDao;
 
 
 /**

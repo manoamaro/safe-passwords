@@ -1,4 +1,4 @@
-package br.com.manoel.amaro.safepasswords.activity;
+package br.com.manoel.amaro.safepasswords.mobile.activity;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;

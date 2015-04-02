@@ -1,4 +1,4 @@
-package amaro.manoel.com.br.safepasswords;
+package br.com.manoel.amaro.safepasswords.wear;
 
 import android.app.Activity;
 import android.os.Bundle;

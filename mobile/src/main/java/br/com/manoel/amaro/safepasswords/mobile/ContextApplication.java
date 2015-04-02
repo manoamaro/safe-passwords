@@ -1,4 +1,4 @@
-package br.com.manoel.amaro.safepasswords;
+package br.com.manoel.amaro.safepasswords.mobile;
 
 import android.app.Application;
 

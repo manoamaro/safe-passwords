@@ -1,4 +1,4 @@
-package br.com.manoel.amaro.safepasswords.activity;
+package br.com.manoel.amaro.safepasswords.mobile.activity;
 
 import android.app.FragmentManager;
 import android.os.Bundle;
@@ -8,9 +8,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import br.com.manoel.amaro.safepasswords.R;
-import br.com.manoel.amaro.safepasswords.activity.fragment.PasswordListFragment;
-import br.com.manoel.amaro.safepasswords.domain.Password;
+import br.com.manoel.amaro.safepasswords.mobile.R;
+import br.com.manoel.amaro.safepasswords.mobile.activity.fragment.PasswordListFragment;
+import br.com.manoel.amaro.safepasswords.mobile.domain.Password;
 
 public class MainActivity extends AbstractActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {

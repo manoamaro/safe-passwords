@@ -1,4 +1,4 @@
-package br.com.manoel.amaro.safepasswords.annotation;
+package br.com.manoel.amaro.safepasswords.mobile.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

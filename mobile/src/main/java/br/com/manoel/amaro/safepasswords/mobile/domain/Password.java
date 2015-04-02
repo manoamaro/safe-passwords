@@ -1,7 +1,7 @@
-package br.com.manoel.amaro.safepasswords.domain;
+package br.com.manoel.amaro.safepasswords.mobile.domain;
 
-import br.com.manoel.amaro.safepasswords.annotation.Column;
-import br.com.manoel.amaro.safepasswords.annotation.Entity;
+import br.com.manoel.amaro.safepasswords.mobile.annotation.Column;
+import br.com.manoel.amaro.safepasswords.mobile.annotation.Entity;
 
 /**
  * Created by manoel on 26/09/14.

@@ -4,19 +4,20 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.manoel.amaro.safepasswords.activity.MainActivity">
+    tools:context="br.com.manoel.amaro.safepasswords.mobile.activity.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <android.support.v7.widget.Toolbar
             android:id="@+id/my_awesome_toolbar"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:minHeight="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            android:elevation="1dp"/>
+            android:elevation="5dp" />
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
@@ -29,7 +30,7 @@
         android:layout_width="@dimen/navigation_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:name="br.com.manoel.amaro.safepasswords.activity.NavigationDrawerFragment"
+        android:name="br.com.manoel.amaro.safepasswords.mobile.activity.NavigationDrawerFragment"
         tools:layout="@layout/fragment_navigation_drawer" />
 
 

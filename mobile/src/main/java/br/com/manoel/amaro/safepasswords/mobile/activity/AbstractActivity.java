@@ -1,9 +1,9 @@
-package br.com.manoel.amaro.safepasswords.activity;
+package br.com.manoel.amaro.safepasswords.mobile.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
-import br.com.manoel.amaro.safepasswords.ContextApplication;
+import br.com.manoel.amaro.safepasswords.mobile.ContextApplication;
 
 /**
  * Created by manoel on 26/09/14.

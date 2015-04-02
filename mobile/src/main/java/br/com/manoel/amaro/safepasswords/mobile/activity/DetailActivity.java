@@ -1,13 +1,11 @@
-package br.com.manoel.amaro.safepasswords.activity;
+package br.com.manoel.amaro.safepasswords.mobile.activity;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.TextView;
 
-import br.com.manoel.amaro.safepasswords.R;
-import br.com.manoel.amaro.safepasswords.domain.Password;
+import br.com.manoel.amaro.safepasswords.mobile.R;
+import br.com.manoel.amaro.safepasswords.mobile.domain.Password;
 
 public class DetailActivity extends AbstractActivity {
 
@@ -15,6 +13,8 @@ public class DetailActivity extends AbstractActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        setSupportActionBar((Toolbar) findViewById(R.id.my_awesome_toolbar));
 
         Password password = (Password) getIntent().getExtras().getSerializable("PASSWORD");
 
