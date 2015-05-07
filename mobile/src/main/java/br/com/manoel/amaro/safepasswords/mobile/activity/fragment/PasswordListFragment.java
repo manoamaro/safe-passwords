@@ -5,9 +5,11 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,10 +30,11 @@ public class PasswordListFragment extends Fragment implements View.OnClickListen
     protected RecyclerView mRecyclerView;
     protected RecyclerView.Adapter mAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
+    protected View rootView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_password_list, container, false);
+        this.rootView = inflater.inflate(R.layout.fragment_password_list, container, false);
         rootView.setTag(TAG);
 
         mRecyclerView = (RecyclerView) rootView.findViewById(R.id.password_list);
@@ -50,7 +53,6 @@ public class PasswordListFragment extends Fragment implements View.OnClickListen
 
     @Override
     public void onClick(View view) {
-        String toolbarTransitionNam = getString(R.string.toolbar_transition_name);
         switch (view.getId()) {
             case R.id.add_button:
                 Intent newPassIntent = new Intent(getActivity(), NewPasswordActivity.class);
@@ -61,11 +63,19 @@ public class PasswordListFragment extends Fragment implements View.OnClickListen
                 Password password = ((PasswordsAdapter.ViewHolder) mRecyclerView.getChildViewHolder(view)).getPassword();
                 intent.putExtra("PASSWORD", password);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(getActivity(),
-                            android.util.Pair.create(view, toolbarTransitionNam)).toBundle());
-                } else {
+                    String passwordDetailTransition = getString(R.string.password_detail_transition_name);
+                    String passwordDetailToolbarTransition = getString(R.string.password_detail_toolbar_transition_name);
+                    String passwordDetailTitleTransition = getString(R.string.password_detail_title_transition_name);
+                    String passwordImageCatTransition = getString(R.string.password_image_transition);
+                    startActivity(intent,
+                            ActivityOptions.makeSceneTransitionAnimation(getActivity(),
+                                    Pair.create(view.findViewById(R.id.password_list_card), passwordDetailTransition),
+                                    Pair.create(getActivity().findViewById(R.id.my_awesome_toolbar), passwordDetailToolbarTransition),
+                                    Pair.create(view.findViewById(R.id.info_text), passwordDetailTitleTransition),
+                                    Pair.create(view.findViewById(R.id.password_image_cat), passwordImageCatTransition)
+                            ).toBundle());
+                } else
                     startActivity(intent);
-                }
                 break;
         }
     }

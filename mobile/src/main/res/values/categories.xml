@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <array name="categories_list">
+        <item>@drawable/blue_category</item>
+        <item>@drawable/red_category</item>
+        <item>@drawable/green_category</item>
+        <item>@drawable/purple_category</item>
+        <item>@drawable/orange_category</item>
+        <item>@drawable/darkblue_category</item>
+        <item>@drawable/darkred_category</item>
+        <item>@drawable/darkgreen_category</item>
+        <item>@drawable/darkpurple_category</item>
+        <item>@drawable/darkorange_category</item>
+    </array>
+
+</resources>

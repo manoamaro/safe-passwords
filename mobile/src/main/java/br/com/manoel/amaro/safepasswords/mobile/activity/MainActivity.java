@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import br.com.manoel.amaro.safepasswords.mobile.R;
 import br.com.manoel.amaro.safepasswords.mobile.activity.fragment.PasswordListFragment;
 import br.com.manoel.amaro.safepasswords.mobile.domain.Password;
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 
 public class MainActivity extends AbstractActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -19,13 +21,17 @@ public class MainActivity extends AbstractActivity
 
     private CharSequence originalTitle;
 
+    @InjectView(R.id.my_awesome_toolbar)
+    Toolbar mainToolBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
+        ButterKnife.inject(this);
 
-        setSupportActionBar((Toolbar) findViewById(R.id.my_awesome_toolbar));
+
+        setSupportActionBar(mainToolBar);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -78,9 +84,6 @@ public class MainActivity extends AbstractActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+        return id == R.id.action_settings || super.onOptionsItemSelected(item);
     }
 }

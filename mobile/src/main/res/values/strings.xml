@@ -24,8 +24,11 @@
     <string name="cancel_action">Cancel</string>
     <string name="save_action">Save</string>
     <string name="title_activity_detail">DetailActivity</string>
-    <string name="password_title_transition_name">passwordTitleTransaction</string>
-    <string name="toolbar_transition_name">toolbar_transition_name</string>
     <string name="title_placeholder">TESTE TITULO</string>
+
+    <string name="password_detail_transition_name">passwordDetailTransitionName</string>
+    <string name="password_detail_toolbar_transition_name">passwordDetailToolbarTransitionName</string>
+    <string name="password_detail_title_transition_name">passwordTitleTransitionName</string>
+    <string name="password_image_transition">passwordCatImageTransition</string>
 
 </resources>
